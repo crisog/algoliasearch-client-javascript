@@ -57,9 +57,9 @@ const objects = [
 ];
 
 index
-  .saveObjects(objects)
-  .then(({ objectIDs }) => {
-    console.log(objectIDs);
+  .saveObject(objects)
+  .then(({ objectID }) => {
+    console.log(objectID);
   })
   .catch(err => {
     console.log(err);
